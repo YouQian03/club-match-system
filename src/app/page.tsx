@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
-import { Sparkles, Compass, ClipboardList, ChevronRight, Star, Zap } from "lucide-react";
+import { Sparkles, Compass, ClipboardList, ChevronRight, Star, Zap, Search as SearchIcon, MessageSquare, ArrowDown, RefreshCw } from "lucide-react";
 import DashboardSection from "@/components/DashboardSection";
+import DesignSection from "@/components/DesignSection";
 
 const features = [
   {
@@ -26,19 +27,6 @@ const features = [
   },
 ];
 
-const painPoints = [
-  { pain: "社团宣传都是包装话术，入社后发现'货不对板'", source: "知乎高频讨论", solution: "结构化档案 + 往届真实评价 + 平台客观数据" },
-  { pain: "百团大战信息过载，不知道自己适合什么", source: "高校官方报道", solution: "AI 四维匹配对话 + 结构化浏览筛选" },
-  { pain: "每个社团报名方式不同，重复填表", source: "社团招新策划书", solution: "统一基础档案 + 自定义补充问题 + 全流程追踪" },
-  { pain: "社恐新生被线下招新的高压社交场景劝退", source: "知乎多个讨论帖", solution: "全流程线上完成，AI 对话零社交压力" },
-];
-
-const decisions = [
-  { choice: "AI 对话 vs 问卷", reason: "问卷死板且无法处理模糊表达，对话能理解'想学点东西但不想太累'这种表述" },
-  { choice: "多维匹配 vs 纯兴趣匹配", reason: "新生选社团的决策因子远不止兴趣，时间投入、氛围、成长预期同样关键" },
-  { choice: "引导式评价 vs 自由文字", reason: "结构化的体验切片比笼统好评更有决策参考价值，每条评价自动回答新生最关心的问题" },
-  { choice: "问答纳入知识库 vs 仅作展示", reason: "形成数据飞轮，平台越用越聪明，每一届新生的问答都在增厚 AI 能力" },
-];
 
 export default function Home() {
   return (
@@ -171,91 +159,7 @@ export default function Home() {
       <DashboardSection />
 
       {/* Design Section */}
-      <section className="space-y-12" id="design">
-        <div className="text-center space-y-4">
-          <h2 className="text-3xl font-bold text-slate-800">设计说明</h2>
-          <p className="text-slate-500">调研洞察与核心设计决策</p>
-        </div>
-
-        <div>
-          <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-6">调研洞察</h3>
-          <div className="grid md:grid-cols-2 gap-4">
-            {painPoints.map((p, i) => (
-              <div key={i} className="bg-white rounded-[1.25rem] p-6 border border-slate-100 space-y-3 hover:shadow-lg hover:shadow-indigo-50 transition-all">
-                <p className="font-bold text-sm text-slate-800">{p.pain}</p>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">来源：{p.source}</p>
-                <div className="flex items-start gap-2 pt-2 border-t border-slate-50">
-                  <Zap size={14} className="text-indigo-500 mt-0.5 shrink-0" />
-                  <p className="text-sm text-indigo-600 font-medium">{p.solution}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-6">核心设计决策</h3>
-          <div className="grid md:grid-cols-2 gap-4">
-            {decisions.map((d, i) => (
-              <div key={i} className="bg-white rounded-[1.25rem] p-6 border border-slate-100 space-y-2 hover:shadow-lg hover:shadow-indigo-50 transition-all">
-                <p className="font-black text-indigo-600 text-sm">{d.choice}</p>
-                <p className="text-sm text-slate-500 leading-relaxed">{d.reason}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Architecture */}
-        <div>
-          <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-6">产品架构</h3>
-          <div className="bg-white rounded-[1.25rem] p-8 border border-slate-100">
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              {[
-                { title: "学生端", color: "text-indigo-600", items: ["AI 匹配助手", "社团浏览 + 筛选", "社团档案页", "一键报名", "申请追踪"] },
-                { title: "社团端", color: "text-emerald-600", items: ["档案编辑", "报名管理", "面试安排", "问答回复", "数据统计"] },
-                { title: "管理端", color: "text-amber-600", items: ["全校数据看板", "社团考核", "资源分配"] },
-              ].map((col) => (
-                <div key={col.title}>
-                  <div className={`font-black ${col.color} mb-4 text-sm uppercase tracking-widest`}>{col.title}</div>
-                  <div className="space-y-2 text-sm">
-                    {col.items.map((item) => (
-                      <div key={item} className="bg-slate-50 rounded-xl p-3 font-medium text-slate-600">{item}</div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-8 text-center">
-              <div className="inline-block bg-indigo-50 text-indigo-600 rounded-2xl px-6 py-3 text-sm font-black">
-                AI 知识库（RAG）— 数据中枢
-              </div>
-              <p className="text-xs text-slate-400 mt-2 font-medium">
-                社团信息 + 评价数据 + 问答沉淀 → 持续增厚，形成数据飞轮
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* User Roles */}
-        <div>
-          <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-6">用户角色地图</h3>
-          <div className="grid md:grid-cols-3 gap-4">
-            {[
-              { title: "目标明确型新生", need: "真实评价 + 客观数据 + 学长学姐交流", border: "border-indigo-200" },
-              { title: "方向模糊型新生", need: "AI 引导发现兴趣 + 多维匹配推荐", border: "border-indigo-200" },
-              { title: "社恐/被动型新生", need: "线上全流程 + 匿名提问 + 零压力", border: "border-indigo-200" },
-              { title: "社团负责人", need: "一站式招新管理 + 报名者筛选", border: "border-emerald-200" },
-              { title: "面试官", need: "提前查看报名者档案 + 针对性回答", border: "border-emerald-200" },
-              { title: "社联/团委管理者", need: "全局数据看板 + 流程标准化", border: "border-amber-200" },
-            ].map((role) => (
-              <div key={role.title} className={`bg-white border-2 ${role.border} rounded-2xl p-5 hover:shadow-md transition-all`}>
-                <p className="font-black text-sm text-slate-800 mb-1">{role.title}</p>
-                <p className="text-xs text-slate-500">{role.need}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <DesignSection />
 
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-white rounded-t-[1.25rem] py-12 px-4 text-center">

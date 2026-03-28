@@ -178,7 +178,9 @@ export default function Navbar() {
             { href: `/admin/${currentClubId}/profile`, label: "社团档案", exact: false },
             { href: `/admin/${currentClubId}/qa`, label: "问答板", exact: false },
           ].map((tab) => {
-            const isActive = tab.exact ? pathname === tab.href : pathname.startsWith(tab.href);
+            const isActive = tab.exact
+              ? (pathname === tab.href || pathname.startsWith(`${tab.href}/applicant`))
+              : pathname.startsWith(tab.href);
             return (
               <Link
                 key={tab.label}

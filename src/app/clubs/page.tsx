@@ -2,8 +2,8 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "motion/react";
-import { Search, Star, Clock, Users, SlidersHorizontal } from "lucide-react";
+import { motion } from "motion/react";
+import { Search, Star, Clock, Users } from "lucide-react";
 import clubsData from "@/data/clubs.json";
 import { Club } from "@/types/club";
 import { cn } from "@/lib/utils";
@@ -22,7 +22,6 @@ export default function ClubsPage() {
   const [joinMode, setJoinMode] = useState("全部");
   const [basis, setBasis] = useState("全部");
   const [feeRange, setFeeRange] = useState("全部");
-  const [showFilters, setShowFilters] = useState(false);
 
   const filtered = useMemo(() => {
     return clubs.filter((c) => {
@@ -43,71 +42,26 @@ export default function ClubsPage() {
 
   return (
     <div className="space-y-8 py-6">
-      {/* Search and Filter Header */}
-      <div className="flex flex-col md:flex-row gap-4 items-center justify-between sticky top-20 z-40 bg-[#F8F9FC]/80 backdrop-blur-md py-4">
-        <div className="relative w-full md:max-w-md group">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-indigo-600 transition-colors" size={20} />
-          <input
-            type="text"
-            placeholder="搜索社团名称或关键词..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full bg-white border border-slate-200 rounded-2xl pl-12 pr-4 py-4 text-sm focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all shadow-sm"
-          />
-        </div>
-
-        <div className="flex items-center gap-3 w-full md:w-auto overflow-x-auto pb-2 md:pb-0 no-scrollbar">
-          <button
-            onClick={() => setShowFilters(!showFilters)}
-            className={cn(
-              "flex items-center gap-2 px-5 py-3 rounded-2xl font-bold text-sm transition-all border-2 shrink-0",
-              showFilters
-                ? "bg-indigo-600 text-white border-indigo-600 shadow-lg shadow-indigo-100"
-                : "bg-white text-slate-600 border-slate-100 hover:border-indigo-200"
-            )}
-          >
-            <SlidersHorizontal size={18} />
-            高级筛选
-          </button>
-
-          <div className="h-8 w-[1px] bg-slate-200 mx-2 hidden md:block" />
-
-          {CATEGORIES.slice(0, 5).map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setCategory(cat)}
-              className={cn(
-                "px-5 py-3 rounded-2xl font-bold text-sm whitespace-nowrap transition-all border-2 shrink-0",
-                category === cat
-                  ? "bg-indigo-50 text-indigo-600 border-indigo-200"
-                  : "bg-white text-slate-500 border-slate-100 hover:border-indigo-100"
-              )}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
+      {/* Search */}
+      <div className="relative w-full group">
+        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-indigo-600 transition-colors" size={20} />
+        <input
+          type="text"
+          placeholder="搜索社团名称或关键词..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-full bg-white border border-slate-200 rounded-2xl pl-12 pr-4 py-4 text-sm focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all shadow-sm"
+        />
       </div>
 
-      {/* Advanced Filter Panel */}
-      <AnimatePresence>
-        {showFilters && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="overflow-hidden"
-          >
-            <div className="bg-white border border-slate-100 rounded-[1.25rem] p-8 grid md:grid-cols-3 lg:grid-cols-5 gap-8 shadow-xl shadow-indigo-50/50">
-              <FilterGroup label="社团类别" options={CATEGORIES} value={category} onChange={setCategory} />
-              <FilterGroup label="时间投入" options={TIME_LEVELS} value={timeLevel} onChange={setTimeLevel} />
-              <FilterGroup label="招新模式" options={JOIN_MODES} value={joinMode} onChange={setJoinMode} />
-              <FilterGroup label="是否需要基础" options={BASIS_OPTIONS} value={basis} onChange={setBasis} />
-              <FilterGroup label="社费范围" options={FEE_RANGES} value={feeRange} onChange={setFeeRange} />
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Filters */}
+      <div className="bg-white border border-slate-100 rounded-[1.25rem] p-6 md:p-8 grid md:grid-cols-3 lg:grid-cols-5 gap-6 shadow-sm">
+        <FilterGroup label="社团类别" options={CATEGORIES} value={category} onChange={setCategory} />
+        <FilterGroup label="时间投入" options={TIME_LEVELS} value={timeLevel} onChange={setTimeLevel} />
+        <FilterGroup label="招新模式" options={JOIN_MODES} value={joinMode} onChange={setJoinMode} />
+        <FilterGroup label="是否需要基础" options={BASIS_OPTIONS} value={basis} onChange={setBasis} />
+        <FilterGroup label="社费范围" options={FEE_RANGES} value={feeRange} onChange={setFeeRange} />
+      </div>
 
       {/* Results Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

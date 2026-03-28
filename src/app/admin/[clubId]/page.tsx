@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { Search, CheckCircle2 } from "lucide-react";
+import { Search, CheckCircle2, CalendarDays, XCircle } from "lucide-react";
 import { toast } from "sonner";
 import clubsData from "@/data/clubs.json";
 import { Club } from "@/types/club";
+import { APPLICANTS_MAP } from "@/data/applicants";
 import { cn } from "@/lib/utils";
 
 const clubs = clubsData as Club[];
@@ -17,34 +18,10 @@ const roleMap: Record<string, string> = {
   "debate-club": "宣传部长",
 };
 
-// Mock applicants per club
-const APPLICANTS_MAP: Record<string, { id: string; name: string; grade: string; major: string; status: string; time: string; weeklyTime: string }[]> = {
-  "guitar-club": [
-    { id: "1", name: "张小明", grade: "大一", major: "计算机科学", status: "待面试", time: "2025-09-10 09:15", weeklyTime: "2-5小时" },
-    { id: "2", name: "李佳慧", grade: "大一", major: "英语", status: "已录取", time: "2025-09-10 10:30", weeklyTime: "2小时以内" },
-    { id: "3", name: "王浩然", grade: "大一", major: "数学", status: "已投递", time: "2025-09-10 14:20", weeklyTime: "2-5小时" },
-    { id: "4", name: "赵心怡", grade: "大一", major: "新闻学", status: "待面试", time: "2025-09-11 08:45", weeklyTime: "5小时以上" },
-    { id: "5", name: "刘思远", grade: "大一", major: "物理", status: "已录取", time: "2025-09-11 11:00", weeklyTime: "2-5小时" },
-    { id: "6", name: "陈雨萱", grade: "大一", major: "设计", status: "未通过", time: "2025-09-11 16:30", weeklyTime: "2小时以内" },
-  ],
-  "street-dance": [
-    { id: "1", name: "周小凡", grade: "大一", major: "体育教育", status: "已录取", time: "2025-09-10 08:00", weeklyTime: "5小时以上" },
-    { id: "2", name: "吴佳琪", grade: "大一", major: "艺术设计", status: "待面试", time: "2025-09-10 09:30", weeklyTime: "2-5小时" },
-    { id: "3", name: "孙明宇", grade: "大一", major: "软件工程", status: "已投递", time: "2025-09-11 10:00", weeklyTime: "5小时以上" },
-    { id: "4", name: "郑小雅", grade: "大二", major: "传播学", status: "待面试", time: "2025-09-11 14:15", weeklyTime: "2-5小时" },
-  ],
-  "debate-club": [
-    { id: "1", name: "黄思源", grade: "大一", major: "法学", status: "已录取", time: "2025-09-10 07:30", weeklyTime: "5小时以上" },
-    { id: "2", name: "马晓丽", grade: "大一", major: "哲学", status: "已投递", time: "2025-09-10 11:00", weeklyTime: "2-5小时" },
-    { id: "3", name: "林浩宇", grade: "大一", major: "经济学", status: "待面试", time: "2025-09-11 09:45", weeklyTime: "2-5小时" },
-    { id: "4", name: "徐文婷", grade: "大一", major: "中文", status: "未通过", time: "2025-09-11 15:20", weeklyTime: "2小时以内" },
-    { id: "5", name: "陈立诚", grade: "大一", major: "国际关系", status: "已录取", time: "2025-09-12 08:00", weeklyTime: "5小时以上" },
-  ],
-};
-
 const STATUS_COLORS: Record<string, string> = {
   "已投递": "bg-blue-50 text-blue-600 border-blue-100",
   "待面试": "bg-amber-50 text-amber-600 border-amber-100",
+  "已面试": "bg-violet-50 text-violet-600 border-violet-100",
   "已录取": "bg-green-50 text-green-600 border-green-100",
   "未通过": "bg-red-50 text-red-600 border-red-100",
 };
@@ -70,6 +47,14 @@ export default function AdminClubPage() {
     setSelectedIds((prev) => prev.includes(id) ? prev.filter((i) => i !== id) : [...prev, id]);
   };
 
+  const hasSelection = selectedIds.length > 0;
+
+  const batchUpdateStatus = (newStatus: string) => {
+    setApplicants((prev) => prev.map((a) => selectedIds.includes(a.id) ? { ...a, status: newStatus } : a));
+    toast.success(`已更新 ${selectedIds.length} 人状态，通知已发送`);
+    setSelectedIds([]);
+  };
+
   if (!club) {
     return (
       <div className="py-20 text-center">
@@ -89,20 +74,42 @@ export default function AdminClubPage() {
             招新进行中 · {role} · 共 {applicants.length} 份申请
           </p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-3">
           <button
-            onClick={() => {
-              if (selectedIds.length === 0) {
-                toast.error("请先勾选要录取的报名者");
-              } else {
-                setApplicants((prev) => prev.map((a) => selectedIds.includes(a.id) ? { ...a, status: "已录取" } : a));
-                toast.success(`已录取 ${selectedIds.length} 名同学，通知已自动发送`);
-                setSelectedIds([]);
-              }
-            }}
-            className="px-6 py-3 rounded-2xl bg-indigo-600 text-white font-bold text-sm shadow-xl shadow-indigo-100 hover:bg-indigo-700 transition-all flex items-center gap-2"
+            disabled={!hasSelection}
+            onClick={() => batchUpdateStatus("待面试")}
+            className={cn(
+              "px-5 py-2.5 rounded-2xl font-bold text-sm flex items-center gap-2 transition-all",
+              hasSelection
+                ? "bg-white border border-slate-200 text-slate-700 hover:border-indigo-200 hover:bg-slate-50"
+                : "bg-slate-50 border border-slate-100 text-slate-300 cursor-not-allowed"
+            )}
           >
-            <CheckCircle2 size={18} /> 录取
+            <CalendarDays size={16} /> 安排面试
+          </button>
+          <button
+            disabled={!hasSelection}
+            onClick={() => batchUpdateStatus("已录取")}
+            className={cn(
+              "px-5 py-2.5 rounded-2xl font-bold text-sm flex items-center gap-2 transition-all",
+              hasSelection
+                ? "bg-indigo-600 text-white shadow-lg shadow-indigo-100 hover:bg-indigo-700"
+                : "bg-indigo-200 text-indigo-400 cursor-not-allowed"
+            )}
+          >
+            <CheckCircle2 size={16} /> 录取
+          </button>
+          <button
+            disabled={!hasSelection}
+            onClick={() => batchUpdateStatus("未通过")}
+            className={cn(
+              "px-5 py-2.5 rounded-2xl font-bold text-sm flex items-center gap-2 transition-all",
+              hasSelection
+                ? "bg-white border border-red-200 text-red-500 hover:bg-red-50"
+                : "bg-slate-50 border border-slate-100 text-slate-300 cursor-not-allowed"
+            )}
+          >
+            <XCircle size={16} /> 拒绝
           </button>
         </div>
       </div>
@@ -120,7 +127,7 @@ export default function AdminClubPage() {
           />
         </div>
         <div className="flex items-center gap-2 overflow-x-auto w-full md:w-auto no-scrollbar">
-          {["全部", "已投递", "待面试", "已录取", "未通过"].map((status) => (
+          {["全部", "已投递", "待面试", "已面试", "已录取", "未通过"].map((status) => (
             <button
               key={status}
               onClick={() => setSelectedStatus(status)}
@@ -138,18 +145,10 @@ export default function AdminClubPage() {
       {/* Table */}
       <div className="bg-white rounded-[1.5rem] border border-slate-100 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse table-fixed">
-            <colgroup>
-              <col style={{ width: "48px" }} />
-              <col style={{ width: "22%" }} />
-              <col style={{ width: "12%" }} />
-              <col style={{ width: "16%" }} />
-              <col style={{ width: "22%" }} />
-              <col style={{ width: "28%" }} />
-            </colgroup>
+          <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-slate-50/50 border-b border-slate-100">
-                <th className="py-4 pl-6 pr-2">
+                <th className="py-4 pl-6 pr-2 w-12">
                   <input
                     type="checkbox"
                     checked={selectedIds.length === filtered.length && filtered.length > 0}
@@ -189,14 +188,12 @@ export default function AdminClubPage() {
                   </td>
                   <td className="py-4 px-4 text-xs text-slate-400 font-bold whitespace-nowrap">{app.time}</td>
                   <td className="py-4 px-4">
-                    <div className="flex items-center gap-2 whitespace-nowrap">
-                      <button className="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-500 border border-slate-100 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50 transition-all">
-                        查看档案
-                      </button>
-                      <button className="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-500 border border-slate-100 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50 transition-all">
-                        状态操作
-                      </button>
-                    </div>
+                    <Link
+                      href={`/admin/${clubId}/applicant/${app.id}`}
+                      className="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-500 border border-slate-100 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50 transition-all whitespace-nowrap"
+                    >
+                      查看档案
+                    </Link>
                   </td>
                 </tr>
               ))}
