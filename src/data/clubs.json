@@ -1,0 +1,1979 @@
+[
+  {
+    "id": "guitar-club",
+    "name": "回声吉他社",
+    "category": "文艺",
+    "slogan": "零基础也能弹出你的第一首歌",
+    "description": "成立于2018年，专注吉他教学与音乐交流的温馨社团。从零基础弹唱到指弹进阶，每周固定教学+自由弹唱活动。学期末还有正式音乐会，给每位成员上台表演的机会。不管你是想学一门技能，还是单纯想找个放松的去处，这里都欢迎你。",
+    "coreActivities": [
+      {
+        "name": "周三弹唱之夜",
+        "desc": "每周三晚开放弹唱，零基础欢迎旁听"
+      },
+      {
+        "name": "学期末音乐会",
+        "desc": "每学期一场正式演出，全员参与"
+      },
+      {
+        "name": "吉他教学小组",
+        "desc": "老带新一对三教学，系统学习"
+      }
+    ],
+    "fee": 30,
+    "feeUsage": "购买公用琴弦、拨片及活动场地费",
+    "requireBasis": false,
+    "basisDesc": "完全零基础可加入，提供系统教学",
+    "weeklyHours": 2,
+    "timeLevel": "轻度",
+    "atmosphere": [
+      "轻松",
+      "社交",
+      "教学型"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 86,
+    "lastTermActivities": 24,
+    "retentionRate": 0.72,
+    "rating": 4.3,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "2-3小时",
+        "threeWords": [
+          "温暖",
+          "包容",
+          "有成长"
+        ],
+        "bestActivity": "学期末音乐会，第一次上台表演特别难忘",
+        "gain": "从零基础到能弹唱完整的歌",
+        "regret": "高级班的内容偏少",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 5,
+          "时间合理性": 4,
+          "收获感": 4
+        },
+        "overall": 4.3
+      },
+      {
+        "grade": "大三",
+        "weeklyHoursActual": "3-4小时",
+        "threeWords": [
+          "自由",
+          "快乐",
+          "有归属感"
+        ],
+        "bestActivity": "周三弹唱之夜，大家围坐一起弹唱的氛围太好了",
+        "gain": "认识了一群志同道合的朋友，现在还经常一起玩音乐",
+        "regret": "场地有时候不太够用",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 5,
+          "时间合理性": 4,
+          "收获感": 4
+        },
+        "overall": 4.5
+      }
+    ],
+    "contacts": [
+      {
+        "name": "陈悦",
+        "grade": "大二",
+        "tag": "零基础入社·现任教学组长",
+        "avatar": "CY",
+        "wechat": "guitar_chenyue"
+      },
+      {
+        "name": "林浩",
+        "grade": "大三",
+        "tag": "社长·指弹方向",
+        "avatar": "LH",
+        "wechat": "linhao_guitar"
+      }
+    ],
+    "qa": [
+      {
+        "question": "零基础大概多久能上台表演？",
+        "asker": "匿名新生",
+        "answer": "一般一个学期就可以参加学期末音乐会了，我们会从最基础的和弦开始教，进度因人而异但大部分人都能跟上。",
+        "answerer": "陈悦",
+        "answererTag": "教学组长",
+        "time": "2025-09-15",
+        "inKnowledgeBase": true
+      },
+      {
+        "question": "需要自己买吉他吗？",
+        "asker": "匿名新生",
+        "answer": "不用，社团有公用吉他可以借，等你确定要长期学了再自己买也不迟。",
+        "answerer": "陈悦",
+        "answererTag": "教学组长",
+        "time": "2025-09-16",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "street-dance",
+    "name": "Pulse街舞社",
+    "category": "文艺",
+    "slogan": "用身体表达态度",
+    "description": "校内最活跃的街舞社团之一，涵盖Breaking、Popping、Hip-hop、Urban等多个舞种。每周三次固定训练，学期中有battle赛和showcase，学期末参加市级高校街舞联赛。氛围热血但不排外，零基础也能加入基础班。",
+    "coreActivities": [
+      {
+        "name": "每周基础训练",
+        "desc": "周二周四晚分舞种训练，零基础跟练"
+      },
+      {
+        "name": "校内Battle赛",
+        "desc": "每月一场，社员自由报名参赛"
+      },
+      {
+        "name": "学期末Showcase",
+        "desc": "全社成果展演，面向全校公开"
+      }
+    ],
+    "fee": 60,
+    "feeUsage": "练功房租赁费、比赛报名费、音响设备维护",
+    "requireBasis": true,
+    "basisDesc": "有一定体能基础优先，零基础需通过入门考核",
+    "weeklyHours": 6,
+    "timeLevel": "重度",
+    "atmosphere": [
+      "热血",
+      "竞技",
+      "团队"
+    ],
+    "joinMode": "申请审核",
+    "memberCount": 52,
+    "lastTermActivities": 36,
+    "retentionRate": 0.58,
+    "rating": 4.1,
+    "customQuestions": [
+      {
+        "type": "single-choice",
+        "question": "你对哪个舞种最感兴趣？",
+        "options": [
+          "Breaking",
+          "Popping",
+          "Hip-hop",
+          "Urban",
+          "还不确定"
+        ]
+      },
+      {
+        "type": "short-answer",
+        "question": "有没有舞蹈基础，学过多久？"
+      }
+    ],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "6-8小时",
+        "threeWords": [
+          "热血",
+          "累但值得",
+          "超有氛围"
+        ],
+        "bestActivity": "市级高校街舞联赛，代表学校上场的感觉太燃了",
+        "gain": "从完全不会到能solo一段，身体素质也提升了很多",
+        "regret": "时间投入确实大，期末考试周压力很大",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 4,
+          "时间合理性": 3,
+          "收获感": 5
+        },
+        "overall": 4.3
+      },
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "4-5小时",
+        "threeWords": [
+          "酷",
+          "自由",
+          "有挑战"
+        ],
+        "bestActivity": "校内Battle赛，虽然输了但特别开心",
+        "gain": "学会了一种全新的表达方式，自信了很多",
+        "regret": "零基础入门阶段比较枯燥，需要耐心",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 4,
+          "时间合理性": 3,
+          "收获感": 4
+        },
+        "overall": 3.8
+      }
+    ],
+    "contacts": [
+      {
+        "name": "张凯",
+        "grade": "大三",
+        "tag": "社长·Breaking方向",
+        "avatar": "ZK",
+        "wechat": "pulse_zhangkai"
+      },
+      {
+        "name": "李梦",
+        "grade": "大二",
+        "tag": "Hip-hop方向·零基础入社",
+        "avatar": "LM",
+        "wechat": "pulse_limeng"
+      },
+      {
+        "name": "周洋",
+        "grade": "大三",
+        "tag": "副社长·Popping方向",
+        "avatar": "ZY",
+        "wechat": "pulse_zhouyang"
+      }
+    ],
+    "qa": [
+      {
+        "question": "完全没有舞蹈基础能加入吗？",
+        "asker": "匿名新生",
+        "answer": "可以！我们每学期都有零基础班，从体能训练和基础律动开始教。不过街舞确实需要付出时间练习，做好心理准备。",
+        "answerer": "张凯",
+        "answererTag": "社长",
+        "time": "2025-09-10",
+        "inKnowledgeBase": true
+      },
+      {
+        "question": "面试都考什么？",
+        "asker": "匿名新生",
+        "answer": "不是考舞蹈水平，主要聊聊你为什么想学街舞、时间安排能不能保证。有基础的同学可以展示一段，没基础的不用紧张。",
+        "answerer": "张凯",
+        "answererTag": "社长",
+        "time": "2025-09-11",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "drama-club",
+    "name": "光影话剧社",
+    "category": "文艺",
+    "slogan": "每个人心里都有一个舞台",
+    "description": "成立于2015年，校内历史最悠久的话剧社团。每学期排演1-2部完整话剧，涵盖经典改编和原创作品。除了演员，还需要编剧、导演、灯光、音效、道具等幕后岗位。适合喜欢表达、有创造力、愿意深度参与团队协作的同学。",
+    "coreActivities": [
+      {
+        "name": "学期大戏",
+        "desc": "每学期排演一部完整话剧，面向全校公演"
+      },
+      {
+        "name": "即兴表演工作坊",
+        "desc": "每周五晚的轻松练习，提升表演基础"
+      },
+      {
+        "name": "剧本围读会",
+        "desc": "每月一次，大家一起读剧本、讨论角色"
+      }
+    ],
+    "fee": 50,
+    "feeUsage": "服装道具制作、场地布置、剧本版权",
+    "requireBasis": false,
+    "basisDesc": "不需要表演基础，幕后岗位同样重要",
+    "weeklyHours": 4,
+    "timeLevel": "中度",
+    "atmosphere": [
+      "文艺",
+      "深度",
+      "团队"
+    ],
+    "joinMode": "申请审核",
+    "memberCount": 38,
+    "lastTermActivities": 16,
+    "retentionRate": 0.68,
+    "rating": 4.5,
+    "customQuestions": [
+      {
+        "type": "single-choice",
+        "question": "你更想参与台前还是幕后？",
+        "options": [
+          "演员",
+          "编剧/导演",
+          "灯光/音效",
+          "道具/服装",
+          "都想试试"
+        ]
+      },
+      {
+        "type": "short-answer",
+        "question": "分享一部你喜欢的戏剧或电影，以及喜欢的原因"
+      }
+    ],
+    "reviews": [
+      {
+        "grade": "大三",
+        "weeklyHoursActual": "4-6小时",
+        "threeWords": [
+          "深度",
+          "有归属",
+          "累并快乐"
+        ],
+        "bestActivity": "学期大戏公演，谢幕时全场掌声的那一刻忘不了",
+        "gain": "表达能力和团队协作能力提升巨大，还交到了最好的朋友",
+        "regret": "排练期确实很忙，需要牺牲一些个人时间",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 5,
+          "时间合理性": 3,
+          "收获感": 5
+        },
+        "overall": 4.5
+      },
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "3-4小时",
+        "threeWords": [
+          "温暖",
+          "有创意",
+          "受启发"
+        ],
+        "bestActivity": "即兴表演工作坊，发现了自己完全没想到的一面",
+        "gain": "克服了社恐，现在上台做presentation也不怕了",
+        "regret": "社团人数不多，有时候岗位分配不太均匀",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 5,
+          "时间合理性": 4,
+          "收获感": 5
+        },
+        "overall": 4.8
+      }
+    ],
+    "contacts": [
+      {
+        "name": "苏晴",
+        "grade": "大三",
+        "tag": "社长·导演方向",
+        "avatar": "SQ",
+        "wechat": "drama_suqing"
+      },
+      {
+        "name": "王磊",
+        "grade": "大二",
+        "tag": "编剧组组长",
+        "avatar": "WL",
+        "wechat": "wanglei_drama"
+      }
+    ],
+    "qa": [
+      {
+        "question": "社恐可以加入吗？",
+        "asker": "匿名新生",
+        "answer": "当然可以！我们有不少社员一开始都有点社恐，但在即兴工作坊里慢慢就放开了。而且不是所有人都要上台演戏，幕后工作也非常有成就感。",
+        "answerer": "苏晴",
+        "answererTag": "社长",
+        "time": "2025-09-12",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "basketball-club",
+    "name": "烈风篮球社",
+    "category": "体育",
+    "slogan": "不止是打球，更是兄弟",
+    "description": "全校规模最大的体育社团，男女队均有。每周固定训练+自由约球，学期中参加校际联赛和院际杯赛。除了竞技组，也有娱乐组适合纯粹想运动的同学。社团氛围非常好，经常组织聚餐和团建。",
+    "coreActivities": [
+      {
+        "name": "每周固定训练",
+        "desc": "周二周四下午，教练带队训练"
+      },
+      {
+        "name": "校际篮球联赛",
+        "desc": "每学期代表学校参加市级比赛"
+      },
+      {
+        "name": "院际杯赛",
+        "desc": "组织全校各院系篮球对抗赛"
+      }
+    ],
+    "fee": 40,
+    "feeUsage": "球队装备、比赛报名费、场地预约",
+    "requireBasis": false,
+    "basisDesc": "娱乐组不需要基础，竞技组需要一定水平",
+    "weeklyHours": 4,
+    "timeLevel": "中度",
+    "atmosphere": [
+      "热血",
+      "社交",
+      "竞技"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 120,
+    "lastTermActivities": 30,
+    "retentionRate": 0.65,
+    "rating": 4.2,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "4-5小时",
+        "threeWords": [
+          "热血",
+          "快乐",
+          "社交达人"
+        ],
+        "bestActivity": "院际杯赛决赛，加时赛绝杀对手，全场沸腾",
+        "gain": "体能提升明显，交到了跨专业的好兄弟",
+        "regret": "女生参与度还是偏低，希望能多组织女子活动",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 5,
+          "时间合理性": 4,
+          "收获感": 4
+        },
+        "overall": 4.3
+      },
+      {
+        "grade": "大三",
+        "weeklyHoursActual": "3-4小时",
+        "threeWords": [
+          "放松",
+          "运动",
+          "交朋友"
+        ],
+        "bestActivity": "社团周末约球，没有压力就是打着玩",
+        "gain": "养成了运动习惯，大学三年没怎么胖过",
+        "regret": "竞技组训练强度大，有时候和课程冲突",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 4,
+          "时间合理性": 4,
+          "收获感": 4
+        },
+        "overall": 4.0
+      }
+    ],
+    "contacts": [
+      {
+        "name": "赵强",
+        "grade": "大三",
+        "tag": "社长·竞技组队长",
+        "avatar": "ZQ",
+        "wechat": "basketball_zhaoqiang"
+      },
+      {
+        "name": "孙浩",
+        "grade": "大二",
+        "tag": "娱乐组组长",
+        "avatar": "SH",
+        "wechat": "basketball_sunhao"
+      },
+      {
+        "name": "王芳",
+        "grade": "大二",
+        "tag": "女队队长",
+        "avatar": "WF",
+        "wechat": "basketball_wangfang"
+      }
+    ],
+    "qa": [
+      {
+        "question": "女生可以加入吗？",
+        "asker": "匿名新生",
+        "answer": "当然！我们有女子队，也有男女混合的娱乐组。女生篮球训练和比赛都有安排，欢迎加入。",
+        "answerer": "赵强",
+        "answererTag": "社长",
+        "time": "2025-09-13",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "running-club",
+    "name": "晨光跑步社",
+    "category": "体育",
+    "slogan": "跑出你的节奏",
+    "description": "一个轻松无压力的跑步社团，不追求速度和成绩，只想帮助大家养成跑步习惯。每周三次晨跑和两次夜跑，自由参加不打卡。学期中组织校园马拉松和城市跑活动。适合想运动但不想竞技的同学。",
+    "coreActivities": [
+      {
+        "name": "日常约跑",
+        "desc": "每周三次晨跑+两次夜跑，自由参加"
+      },
+      {
+        "name": "校园迷你马拉松",
+        "desc": "每学期一次，5km趣味跑"
+      },
+      {
+        "name": "城市跑探索",
+        "desc": "每月一次周末城市跑，边跑边看风景"
+      }
+    ],
+    "fee": 20,
+    "feeUsage": "活动物资、完赛奖牌制作",
+    "requireBasis": false,
+    "basisDesc": "能跑就行，不要求配速",
+    "weeklyHours": 2,
+    "timeLevel": "轻度",
+    "atmosphere": [
+      "轻松",
+      "健康",
+      "自由"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 95,
+    "lastTermActivities": 40,
+    "retentionRate": 0.55,
+    "rating": 4.0,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "1-2小时",
+        "threeWords": [
+          "无压力",
+          "健康",
+          "清爽"
+        ],
+        "bestActivity": "城市跑探索，跑过了城市好多之前不知道的角落",
+        "gain": "养成了早起的习惯，整个人状态好了很多",
+        "regret": "社员之间交流偏少，因为大家跑步时各跑各的",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 3,
+          "时间合理性": 5,
+          "收获感": 4
+        },
+        "overall": 4.0
+      },
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "2-3小时",
+        "threeWords": [
+          "自律",
+          "简单",
+          "舒服"
+        ],
+        "bestActivity": "校园迷你马拉松，跑完5km拿到奖牌超有成就感",
+        "gain": "减肥成功，瘦了10斤",
+        "regret": "活动形式比较单一，就是跑步",
+        "scores": {
+          "活动质量": 3,
+          "氛围友好度": 4,
+          "时间合理性": 5,
+          "收获感": 4
+        },
+        "overall": 4.0
+      }
+    ],
+    "contacts": [
+      {
+        "name": "李雨",
+        "grade": "大二",
+        "tag": "社长·跑步爱好者",
+        "avatar": "LY",
+        "wechat": "running_liyu"
+      },
+      {
+        "name": "张晨",
+        "grade": "大二",
+        "tag": "副社长·马拉松爱好者",
+        "avatar": "ZC",
+        "wechat": "running_zhangchen"
+      }
+    ],
+    "qa": [
+      {
+        "question": "必须每次都参加吗？",
+        "asker": "匿名新生",
+        "answer": "完全不用！我们没有打卡机制，有空就来跑，没空就休息。跑步本来就应该是自由的。",
+        "answerer": "李雨",
+        "answererTag": "社长",
+        "time": "2025-09-14",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "martial-arts",
+    "name": "武道社",
+    "category": "体育",
+    "slogan": "习武明德，强身修心",
+    "description": "融合传统武术与现代搏击的综合武道社团。教授太极拳、散打基础、防身术等内容。每周两次正式训练，由校武术队退役成员担任教练。注重基本功训练和武德教育，不是打打杀杀，而是修身养性。",
+    "coreActivities": [
+      {
+        "name": "每周武术训练",
+        "desc": "周三周六下午，基本功+套路/实战"
+      },
+      {
+        "name": "校武术表演",
+        "desc": "校庆、运动会等大型活动的武术表演"
+      },
+      {
+        "name": "防身术公开课",
+        "desc": "每学期面向全校开放2次防身术公开课"
+      }
+    ],
+    "fee": 50,
+    "feeUsage": "训练器材、护具、教练补贴",
+    "requireBasis": true,
+    "basisDesc": "需要基本体能，入社后有体能测试",
+    "weeklyHours": 3,
+    "timeLevel": "中度",
+    "atmosphere": [
+      "硬核",
+      "自律",
+      "传统"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 35,
+    "lastTermActivities": 18,
+    "retentionRate": 0.6,
+    "rating": 4.4,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "3-4小时",
+        "threeWords": [
+          "踏实",
+          "有内涵",
+          "强身"
+        ],
+        "bestActivity": "校庆武术表演，台下几千人看着，特别自豪",
+        "gain": "体质明显好转，不再经常感冒，也学会了基本防身",
+        "regret": "训练比较辛苦，冬天室外练功挺考验意志力",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 4,
+          "时间合理性": 4,
+          "收获感": 5
+        },
+        "overall": 4.5
+      }
+    ],
+    "contacts": [
+      {
+        "name": "刘毅",
+        "grade": "大三",
+        "tag": "社长·散打方向",
+        "avatar": "LYi",
+        "wechat": "wudao_liuyi"
+      },
+      {
+        "name": "陈刚",
+        "grade": "大二",
+        "tag": "太极拳方向",
+        "avatar": "CG",
+        "wechat": "wudao_chengang"
+      },
+      {
+        "name": "赵敏",
+        "grade": "大二",
+        "tag": "防身术教练·女生代表",
+        "avatar": "ZM",
+        "wechat": "wudao_zhaomin"
+      }
+    ],
+    "qa": [
+      {
+        "question": "女生适合练吗？",
+        "asker": "匿名新生",
+        "answer": "非常适合！我们有不少女社员，防身术课程特别受女生欢迎。训练强度教练会根据个人情况调整。",
+        "answerer": "刘毅",
+        "answererTag": "社长",
+        "time": "2025-09-15",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "debate-club",
+    "name": "锋芒辩论社",
+    "category": "学术",
+    "slogan": "用逻辑说话，用思辨成长",
+    "description": "校内辩论赛的常年冠军队伍，也是锻炼思维和表达最好的社团之一。不只是打比赛，日常还有逻辑训练、时事讨论、模拟法庭等活动。需要申请加入，但不要求辩论经验，更看重思维敏捷度和学习意愿。",
+    "coreActivities": [
+      {
+        "name": "每周辩论训练",
+        "desc": "周日下午，模拟辩论赛+复盘点评"
+      },
+      {
+        "name": "校际辩论赛",
+        "desc": "代表学校参加市级、省级辩论赛"
+      },
+      {
+        "name": "时事圆桌讨论",
+        "desc": "每两周一次，围绕热点话题深度讨论"
+      }
+    ],
+    "fee": 20,
+    "feeUsage": "比赛差旅费、资料打印",
+    "requireBasis": true,
+    "basisDesc": "需要一定的逻辑思维和公众表达能力",
+    "weeklyHours": 4,
+    "timeLevel": "中度",
+    "atmosphere": [
+      "学术",
+      "激烈",
+      "成长型"
+    ],
+    "joinMode": "申请审核",
+    "memberCount": 30,
+    "lastTermActivities": 22,
+    "retentionRate": 0.75,
+    "rating": 4.6,
+    "customQuestions": [
+      {
+        "type": "short-answer",
+        "question": "请就'大学生应该广泛社交还是专注学业'给出你的观点（200字以内）"
+      }
+    ],
+    "reviews": [
+      {
+        "grade": "大三",
+        "weeklyHoursActual": "4-6小时",
+        "threeWords": [
+          "烧脑",
+          "成长快",
+          "有深度"
+        ],
+        "bestActivity": "省级辩论赛拿到亚军，整个团队抱在一起哭",
+        "gain": "逻辑能力和表达能力质的飞跃，考研面试也受益匪浅",
+        "regret": "备赛期压力很大，有时候和学业冲突严重",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 4,
+          "时间合理性": 3,
+          "收获感": 5
+        },
+        "overall": 4.3
+      },
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "3-4小时",
+        "threeWords": [
+          "刺激",
+          "开眼界",
+          "有挑战"
+        ],
+        "bestActivity": "时事圆桌讨论，每次都能听到完全不同的观点",
+        "gain": "学会了多角度看问题，不再轻易下结论",
+        "regret": "社团氛围有时候竞争性偏强，新人压力有点大",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 4,
+          "时间合理性": 4,
+          "收获感": 5
+        },
+        "overall": 4.5
+      }
+    ],
+    "contacts": [
+      {
+        "name": "方远",
+        "grade": "大三",
+        "tag": "社长·最佳辩手",
+        "avatar": "FY",
+        "wechat": "debate_fangyuan"
+      },
+      {
+        "name": "林晓",
+        "grade": "大二",
+        "tag": "副社长·新人培训负责人",
+        "avatar": "LX",
+        "wechat": "debate_linxiao"
+      },
+      {
+        "name": "何雨",
+        "grade": "大三",
+        "tag": "赛事组长·省赛经验",
+        "avatar": "HY",
+        "wechat": "debate_heyu"
+      }
+    ],
+    "qa": [
+      {
+        "question": "没参加过辩论赛能加入吗？",
+        "asker": "匿名新生",
+        "answer": "完全可以！我们大部分社员都是大学才开始接触辩论的。面试不考辩论技巧，主要看你的思维方式和学习热情。",
+        "answerer": "方远",
+        "answererTag": "社长",
+        "time": "2025-09-10",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "coding-club",
+    "name": "字节跳动编程社",
+    "category": "学术",
+    "slogan": "Write code, build future",
+    "description": "面向所有对编程感兴趣的同学，不限专业。活动包括算法竞赛培训、项目实战、技术分享和黑客马拉松。与多家互联网公司有合作，优秀社员有内推机会。既有硬核的竞赛组，也有轻松的项目体验组。",
+    "coreActivities": [
+      {
+        "name": "每周算法训练",
+        "desc": "周六下午，LeetCode刷题+讲解"
+      },
+      {
+        "name": "Hackathon黑客马拉松",
+        "desc": "每学期一次，48小时极限开发"
+      },
+      {
+        "name": "技术分享会",
+        "desc": "每两周一次，社员轮流分享技术话题"
+      }
+    ],
+    "fee": 0,
+    "feeUsage": "",
+    "requireBasis": false,
+    "basisDesc": "项目体验组不需要基础，竞赛组需要一定编程能力",
+    "weeklyHours": 3,
+    "timeLevel": "中度",
+    "atmosphere": [
+      "极客",
+      "务实",
+      "成长型"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 65,
+    "lastTermActivities": 20,
+    "retentionRate": 0.7,
+    "rating": 4.4,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "3-5小时",
+        "threeWords": [
+          "干货多",
+          "实用",
+          "有产出"
+        ],
+        "bestActivity": "Hackathon黑客马拉松，48小时做出了一个完整的小程序",
+        "gain": "编程能力进步巨大，拿到了大厂实习内推",
+        "regret": "竞赛组和体验组有时候融合不够，氛围有点割裂",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 4,
+          "时间合理性": 4,
+          "收获感": 5
+        },
+        "overall": 4.5
+      },
+      {
+        "grade": "大三",
+        "weeklyHoursActual": "2-3小时",
+        "threeWords": [
+          "硬核",
+          "有帮助",
+          "接地气"
+        ],
+        "bestActivity": "技术分享会，学长分享的面试经验特别实用",
+        "gain": "从只会写作业到能独立做项目，简历上多了好几个作品",
+        "regret": "非计算机专业的同学可能一开始会有点吃力",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 4,
+          "时间合理性": 4,
+          "收获感": 5
+        },
+        "overall": 4.3
+      }
+    ],
+    "contacts": [
+      {
+        "name": "韩冰",
+        "grade": "大三",
+        "tag": "社长·ACM银牌",
+        "avatar": "HB",
+        "wechat": "coding_hanbing"
+      },
+      {
+        "name": "刘阳",
+        "grade": "大二",
+        "tag": "项目体验组组长",
+        "avatar": "LYa",
+        "wechat": "coding_liuyang"
+      },
+      {
+        "name": "吴珊",
+        "grade": "大三",
+        "tag": "副社长·前端方向",
+        "avatar": "WS",
+        "wechat": "coding_wushan"
+      }
+    ],
+    "qa": [
+      {
+        "question": "文科生可以加入吗？",
+        "asker": "匿名新生",
+        "answer": "当然可以！我们项目体验组就是面向零基础同学的，从Python入门开始教。编程不分文理，兴趣最重要。",
+        "answerer": "韩冰",
+        "answererTag": "社长",
+        "time": "2025-09-14",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "reading-club",
+    "name": "拾光读书会",
+    "category": "学术",
+    "slogan": "在阅读中遇见更好的自己",
+    "description": "一个安静、深度的阅读交流社团。每两周共读一本书，线下举办读书分享会，大家围坐讨论感悟。涵盖文学、哲学、社科、心理学等多个领域。没有任务压力，读多读少随意，重要的是享受阅读和交流的过程。",
+    "coreActivities": [
+      {
+        "name": "双周读书分享会",
+        "desc": "每两周一次，围绕共读书目深度讨论"
+      },
+      {
+        "name": "作者见面会",
+        "desc": "每学期邀请1-2位作家来校交流"
+      },
+      {
+        "name": "读书笔记交换",
+        "desc": "社员之间交换读书笔记，互相启发"
+      }
+    ],
+    "fee": 30,
+    "feeUsage": "共读书目购买（社团统一采购优惠价）",
+    "requireBasis": false,
+    "basisDesc": "只要喜欢读书就行",
+    "weeklyHours": 2,
+    "timeLevel": "轻度",
+    "atmosphere": [
+      "安静",
+      "深度",
+      "小众"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 28,
+    "lastTermActivities": 12,
+    "retentionRate": 0.8,
+    "rating": 4.7,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "2-3小时",
+        "threeWords": [
+          "安静",
+          "治愈",
+          "有深度"
+        ],
+        "bestActivity": "作者见面会，面对面和喜欢的作家交流太幸福了",
+        "gain": "阅读量翻倍，视野开阔了很多，也认识了几个灵魂朋友",
+        "regret": "社团人数少，有时候讨论不够热烈",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 5,
+          "时间合理性": 5,
+          "收获感": 5
+        },
+        "overall": 5.0
+      },
+      {
+        "grade": "大三",
+        "weeklyHoursActual": "1-2小时",
+        "threeWords": [
+          "舒服",
+          "不功利",
+          "纯粹"
+        ],
+        "bestActivity": "读书笔记交换，看到别人的思考角度特别有启发",
+        "gain": "培养了持续阅读的习惯",
+        "regret": "书目选择有时候偏文学，想多一些社科类的",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 5,
+          "时间合理性": 5,
+          "收获感": 4
+        },
+        "overall": 4.5
+      }
+    ],
+    "contacts": [
+      {
+        "name": "周然",
+        "grade": "大三",
+        "tag": "社长·中文系在读",
+        "avatar": "ZR",
+        "wechat": "reading_zhouran"
+      },
+      {
+        "name": "李文",
+        "grade": "大二",
+        "tag": "活动策划·哲学爱好者",
+        "avatar": "LW",
+        "wechat": "reading_liwen"
+      }
+    ],
+    "qa": [
+      {
+        "question": "读书速度慢跟不上怎么办？",
+        "asker": "匿名新生",
+        "answer": "没关系！我们不要求每本都读完，读到哪儿聊到哪儿。分享会上听别人的分享也是一种学习方式。",
+        "answerer": "周然",
+        "answererTag": "社长",
+        "time": "2025-09-12",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "volunteer-association",
+    "name": "星火志愿者协会",
+    "category": "公益",
+    "slogan": "微光汇聚，温暖前行",
+    "description": "全校最大的公益类社团，对接敬老院、社区、特殊学校等多个长期服务基地。每周末有固定志愿服务活动，学期中还有大型公益项目。参与志愿服务可获得志愿时长认证，对评奖评优有加分。",
+    "coreActivities": [
+      {
+        "name": "周末志愿服务",
+        "desc": "每周末对接社区/敬老院，固定服务"
+      },
+      {
+        "name": "爱心义卖",
+        "desc": "每学期一次大型义卖活动，筹款捐赠"
+      },
+      {
+        "name": "公益项目策划",
+        "desc": "自主策划公益活动，如环保倡议、图书捐赠"
+      }
+    ],
+    "fee": 0,
+    "feeUsage": "",
+    "requireBasis": false,
+    "basisDesc": "有爱心就行",
+    "weeklyHours": 3,
+    "timeLevel": "中度",
+    "atmosphere": [
+      "温暖",
+      "有意义",
+      "社交"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 150,
+    "lastTermActivities": 28,
+    "retentionRate": 0.5,
+    "rating": 4.1,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "3-4小时",
+        "threeWords": [
+          "有意义",
+          "温暖",
+          "充实"
+        ],
+        "bestActivity": "去特殊学校陪孩子们画画，看到他们笑的时候特别感动",
+        "gain": "变得更有同理心，也认识了一群善良的朋友",
+        "regret": "有些活动组织不够细致，偶尔有点形式主义",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 5,
+          "时间合理性": 4,
+          "收获感": 4
+        },
+        "overall": 4.3
+      },
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "2-3小时",
+        "threeWords": [
+          "充实",
+          "成长",
+          "有温度"
+        ],
+        "bestActivity": "爱心义卖，自己策划的摊位卖了最多",
+        "gain": "志愿时长加了不少分，评奖学金的时候派上用场了",
+        "regret": "社团人太多，核心圈子之外的人参与感偏弱",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 4,
+          "时间合理性": 4,
+          "收获感": 3
+        },
+        "overall": 3.8
+      }
+    ],
+    "contacts": [
+      {
+        "name": "杨帆",
+        "grade": "大三",
+        "tag": "会长·公益达人",
+        "avatar": "YF",
+        "wechat": "volunteer_yangfan"
+      },
+      {
+        "name": "陈露",
+        "grade": "大二",
+        "tag": "活动组长·敬老院项目负责人",
+        "avatar": "CLu",
+        "wechat": "volunteer_chenlu"
+      },
+      {
+        "name": "王磊",
+        "grade": "大三",
+        "tag": "副会长·义卖策划",
+        "avatar": "WLei",
+        "wechat": "volunteer_wanglei"
+      }
+    ],
+    "qa": [
+      {
+        "question": "志愿时长怎么认证？",
+        "asker": "匿名新生",
+        "answer": "每次活动后我们会统一登记时长，学期末出具盖章的志愿时长证明，可以用于评奖评优和综测加分。",
+        "answerer": "杨帆",
+        "answererTag": "会长",
+        "time": "2025-09-10",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "teaching-support",
+    "name": "薪火支教社",
+    "category": "公益",
+    "slogan": "把知识带到更远的地方",
+    "description": "专注乡村教育支援的公益社团。学期中在线上为乡村小学提供远程辅导，寒暑假组织实地支教活动（7-10天）。不只是教课，还会做乡村调研和教育公益项目。对个人成长帮助非常大，但需要较高的时间和精力投入。",
+    "coreActivities": [
+      {
+        "name": "线上远程辅导",
+        "desc": "每周与对接学校的小朋友视频上课"
+      },
+      {
+        "name": "暑期支教",
+        "desc": "暑假赴乡村学校实地支教7-10天"
+      },
+      {
+        "name": "教育调研报告",
+        "desc": "基于支教经历撰写调研报告"
+      }
+    ],
+    "fee": 0,
+    "feeUsage": "",
+    "requireBasis": false,
+    "basisDesc": "需要耐心和责任心，有教学热情",
+    "weeklyHours": 3,
+    "timeLevel": "中度",
+    "atmosphere": [
+      "有使命感",
+      "深度",
+      "成长型"
+    ],
+    "joinMode": "申请审核",
+    "memberCount": 25,
+    "lastTermActivities": 14,
+    "retentionRate": 0.78,
+    "rating": 4.8,
+    "customQuestions": [
+      {
+        "type": "short-answer",
+        "question": "你为什么想参加支教？（100字以内）"
+      },
+      {
+        "type": "single-choice",
+        "question": "你暑假是否有7-10天的空余时间参与实地支教？",
+        "options": [
+          "可以",
+          "不确定",
+          "暂时不行，但想参加线上辅导"
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "grade": "大三",
+        "weeklyHoursActual": "3-5小时",
+        "threeWords": [
+          "震撼",
+          "改变人生观",
+          "有意义"
+        ],
+        "bestActivity": "暑期支教，临走时孩子们追着大巴车跑的画面一辈子忘不了",
+        "gain": "重新理解了教育的意义，也更珍惜自己拥有的学习资源",
+        "regret": "支教准备工作量大，学期中有时候会比较辛苦",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 5,
+          "时间合理性": 3,
+          "收获感": 5
+        },
+        "overall": 4.5
+      }
+    ],
+    "contacts": [
+      {
+        "name": "谢明",
+        "grade": "大三",
+        "tag": "社长·三次支教经历",
+        "avatar": "XM",
+        "wechat": "teach_xieming"
+      },
+      {
+        "name": "李佳",
+        "grade": "大二",
+        "tag": "线上辅导负责人·两次支教经历",
+        "avatar": "LJ",
+        "wechat": "teach_lijia"
+      }
+    ],
+    "qa": [
+      {
+        "question": "暑期支教安全吗？住宿条件怎么样？",
+        "asker": "匿名新生",
+        "answer": "学校统一购买保险，有老师带队。住宿一般在当地学校宿舍，条件朴素但安全。我们已经连续做了5年，流程很成熟。",
+        "answerer": "谢明",
+        "answererTag": "社长",
+        "time": "2025-09-11",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "entrepreneurship",
+    "name": "创行创业社",
+    "category": "实践",
+    "slogan": "想法不值钱，做出来才值钱",
+    "description": "面向有创业兴趣的同学，不限专业。活动以项目实战为核心：组队做商业计划、参加创业比赛、对接校友投资人。社团内部按项目组运作，每个项目组3-5人，从idea到落地全流程体验。适合想提前感受职场节奏的同学。",
+    "coreActivities": [
+      {
+        "name": "创业项目孵化",
+        "desc": "组队完成从idea到BP的全流程"
+      },
+      {
+        "name": "校友创业分享",
+        "desc": "每月邀请创业校友来校分享"
+      },
+      {
+        "name": "创业大赛备战",
+        "desc": "组队参加挑战杯、互联网+等比赛"
+      }
+    ],
+    "fee": 0,
+    "feeUsage": "",
+    "requireBasis": true,
+    "basisDesc": "需要有基本的商业认知或项目经验",
+    "weeklyHours": 5,
+    "timeLevel": "重度",
+    "atmosphere": [
+      "务实",
+      "高强度",
+      "成长型"
+    ],
+    "joinMode": "申请审核",
+    "memberCount": 40,
+    "lastTermActivities": 15,
+    "retentionRate": 0.55,
+    "rating": 4.2,
+    "customQuestions": [
+      {
+        "type": "short-answer",
+        "question": "请简述一个你感兴趣的商业想法（200字以内）"
+      }
+    ],
+    "reviews": [
+      {
+        "grade": "大三",
+        "weeklyHoursActual": "5-8小时",
+        "threeWords": [
+          "高效",
+          "有压力",
+          "像实习"
+        ],
+        "bestActivity": "挑战杯比赛拿了省级银奖，项目从0到1全是自己做的",
+        "gain": "简历含金量爆表，面试的时候全在聊社团项目经历",
+        "regret": "时间投入很大，如果课业压力大的话真的很累",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 3,
+          "时间合理性": 2,
+          "收获感": 5
+        },
+        "overall": 3.8
+      },
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "4-5小时",
+        "threeWords": [
+          "实战",
+          "快节奏",
+          "长见识"
+        ],
+        "bestActivity": "校友创业分享，听到了书本里学不到的真实创业故事",
+        "gain": "学会了商业思维，看问题的角度完全不一样了",
+        "regret": "项目组之间资源分配不太均匀",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 4,
+          "时间合理性": 3,
+          "收获感": 5
+        },
+        "overall": 4.0
+      }
+    ],
+    "contacts": [
+      {
+        "name": "陈思远",
+        "grade": "大三",
+        "tag": "社长·互联网+金奖",
+        "avatar": "CSY",
+        "wechat": "startup_chensiyuan"
+      },
+      {
+        "name": "张琪",
+        "grade": "大二",
+        "tag": "项目组长·运营方向",
+        "avatar": "ZQ",
+        "wechat": "startup_zhangqi"
+      },
+      {
+        "name": "黄涛",
+        "grade": "大三",
+        "tag": "副社长·技术方向",
+        "avatar": "HT",
+        "wechat": "startup_huangtao"
+      }
+    ],
+    "qa": [
+      {
+        "question": "没有商科背景能加入吗？",
+        "asker": "匿名新生",
+        "answer": "完全可以！创业团队需要各种背景的人。技术、设计、运营都需要。我们社长就是工科出身。",
+        "answerer": "陈思远",
+        "answererTag": "社长",
+        "time": "2025-09-13",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "photography-club",
+    "name": "光圈摄影社",
+    "category": "实践",
+    "slogan": "用镜头记录世界的温度",
+    "description": "一个兼具教学和创作的摄影社团。从相机操作基础到后期修图，再到作品创作，提供完整的学习路径。每月组织外拍活动，学期末举办线下摄影展。手机摄影也欢迎，不强制要求相机设备。",
+    "coreActivities": [
+      {
+        "name": "摄影教学课",
+        "desc": "每周一次，从入门到进阶系统教学"
+      },
+      {
+        "name": "月度外拍",
+        "desc": "每月一次主题外拍活动"
+      },
+      {
+        "name": "学期末摄影展",
+        "desc": "精选社员作品举办线下展览"
+      }
+    ],
+    "fee": 20,
+    "feeUsage": "展览布置费用、打印耗材",
+    "requireBasis": false,
+    "basisDesc": "手机摄影也可以，不需要专业设备",
+    "weeklyHours": 2,
+    "timeLevel": "轻度",
+    "atmosphere": [
+      "文艺",
+      "轻松",
+      "教学型"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 55,
+    "lastTermActivities": 16,
+    "retentionRate": 0.62,
+    "rating": 4.3,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "2-3小时",
+        "threeWords": [
+          "文艺",
+          "治愈",
+          "有眼光"
+        ],
+        "bestActivity": "学期末摄影展，看到自己的照片被打印出来挂在展览上特别有成就感",
+        "gain": "手机摄影水平大幅提升，朋友圈照片都好看了",
+        "regret": "外拍活动有时候天气不好会取消",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 5,
+          "时间合理性": 5,
+          "收获感": 4
+        },
+        "overall": 4.5
+      },
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "1-2小时",
+        "threeWords": [
+          "轻松",
+          "有收获",
+          "看世界"
+        ],
+        "bestActivity": "月度外拍，去了城市很多有趣的角落",
+        "gain": "学会了用不同的视角看日常生活",
+        "regret": "进阶课程偏少，想学更多后期技术",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 4,
+          "时间合理性": 5,
+          "收获感": 4
+        },
+        "overall": 4.3
+      }
+    ],
+    "contacts": [
+      {
+        "name": "沈佳",
+        "grade": "大二",
+        "tag": "社长·风光摄影",
+        "avatar": "SJ",
+        "wechat": "photo_shenjia"
+      },
+      {
+        "name": "王越",
+        "grade": "大二",
+        "tag": "副社长·人像摄影",
+        "avatar": "WY",
+        "wechat": "photo_wangyue"
+      },
+      {
+        "name": "赵鑫",
+        "grade": "大三",
+        "tag": "后期组组长",
+        "avatar": "ZX",
+        "wechat": "photo_zhaoxin"
+      }
+    ],
+    "qa": [
+      {
+        "question": "只有手机没有相机可以加入吗？",
+        "asker": "匿名新生",
+        "answer": "完全可以！现在手机摄影已经很强了，我们也有专门的手机摄影课程。摄影的核心是审美和构图，不在于设备。",
+        "answerer": "沈佳",
+        "answererTag": "社长",
+        "time": "2025-09-12",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "board-game",
+    "name": "骰子桌游社",
+    "category": "兴趣",
+    "slogan": "一起掷骰子，一起交朋友",
+    "description": "校内最大的桌游爱好者聚集地。拥有200+款桌游，涵盖策略、推理、派对、角色扮演等各类型。每周末固定开桌游局，工作日晚上也有自发约局。不需要任何经验，现场教学。是最轻松的交朋友方式之一。",
+    "coreActivities": [
+      {
+        "name": "周末桌游大局",
+        "desc": "每周六下午，全社开放，自由组局"
+      },
+      {
+        "name": "桌游锦标赛",
+        "desc": "每学期一次，围绕某款经典桌游的正式比赛"
+      },
+      {
+        "name": "新游试玩",
+        "desc": "每月引进新桌游，社员优先体验"
+      }
+    ],
+    "fee": 30,
+    "feeUsage": "购买新桌游、替换损耗配件",
+    "requireBasis": false,
+    "basisDesc": "完全不需要经验，现场教学",
+    "weeklyHours": 2,
+    "timeLevel": "轻度",
+    "atmosphere": [
+      "欢乐",
+      "社交",
+      "轻松"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 70,
+    "lastTermActivities": 22,
+    "retentionRate": 0.6,
+    "rating": 4.2,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "2-4小时",
+        "threeWords": [
+          "快乐",
+          "放松",
+          "交朋友"
+        ],
+        "bestActivity": "桌游锦标赛，阿瓦隆决赛打了三个小时超刺激",
+        "gain": "交到了一群不同专业的朋友，周末再也不无聊了",
+        "regret": "热门桌游有时候排队等位要等很久",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 5,
+          "时间合理性": 4,
+          "收获感": 3
+        },
+        "overall": 4.0
+      },
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "2-3小时",
+        "threeWords": [
+          "社交利器",
+          "有趣",
+          "上头"
+        ],
+        "bestActivity": "周末桌游大局，发现了好多之前没玩过的桌游类型",
+        "gain": "从社恐变成了社牛，桌游真的是破冰神器",
+        "regret": "重度策略桌游玩的人少，大部分人喜欢轻松的派对游戏",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 5,
+          "时间合理性": 5,
+          "收获感": 3
+        },
+        "overall": 4.3
+      }
+    ],
+    "contacts": [
+      {
+        "name": "吴迪",
+        "grade": "大二",
+        "tag": "社长·策略桌游爱好者",
+        "avatar": "WD",
+        "wechat": "boardgame_wudi"
+      },
+      {
+        "name": "陈飞",
+        "grade": "大二",
+        "tag": "副社长·推理桌游爱好者",
+        "avatar": "CF",
+        "wechat": "boardgame_chenfei"
+      },
+      {
+        "name": "林静",
+        "grade": "大二",
+        "tag": "活动组长·派对游戏达人",
+        "avatar": "LJ2",
+        "wechat": "boardgame_linjing"
+      }
+    ],
+    "qa": [
+      {
+        "question": "一个人去会不会很尴尬？",
+        "asker": "匿名新生",
+        "answer": "完全不会！桌游天然就是破冰工具，来了就直接加入一桌，玩一局下来就熟了。我们很多社员一开始都是一个人来的。",
+        "answerer": "吴迪",
+        "answererTag": "社长",
+        "time": "2025-09-14",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "anime-club",
+    "name": "二次元动漫社",
+    "category": "兴趣",
+    "slogan": "三次元的友谊，二次元的热爱",
+    "description": "ACG文化爱好者大本营。活动包括番剧鉴赏、漫画创作、Cosplay、同人展摆摊等。每年校内漫展是社团最大的活动，全社参与策划和执行。氛围包容开放，什么类型的宅都能找到组织。",
+    "coreActivities": [
+      {
+        "name": "每周番剧鉴赏",
+        "desc": "周五晚一起看番+讨论"
+      },
+      {
+        "name": "校内漫展",
+        "desc": "每年一次大型漫展，社团主办"
+      },
+      {
+        "name": "Cosplay工作坊",
+        "desc": "每月一次，教制作道具和服装"
+      }
+    ],
+    "fee": 40,
+    "feeUsage": "漫展布展费用、Cosplay材料",
+    "requireBasis": false,
+    "basisDesc": "喜欢动漫就行，不需要会画画或Cos",
+    "weeklyHours": 2,
+    "timeLevel": "轻度",
+    "atmosphere": [
+      "包容",
+      "有趣",
+      "小众"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 80,
+    "lastTermActivities": 18,
+    "retentionRate": 0.65,
+    "rating": 4.3,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "2-3小时",
+        "threeWords": [
+          "快乐宅",
+          "有归属",
+          "包容"
+        ],
+        "bestActivity": "校内漫展，自己做的Cos服上场的那一刻感觉整个青春都值了",
+        "gain": "找到了一群同好，不用再一个人偷偷看番了",
+        "regret": "非漫展期活动有时候偏松散",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 5,
+          "时间合理性": 5,
+          "收获感": 4
+        },
+        "overall": 4.5
+      },
+      {
+        "grade": "大三",
+        "weeklyHoursActual": "1-2小时",
+        "threeWords": [
+          "自在",
+          "同好",
+          "有趣"
+        ],
+        "bestActivity": "番剧鉴赏会，和同好一起看番吐槽超开心",
+        "gain": "认识了很多圈内朋友，还一起去了好几次漫展",
+        "regret": "漫展策划期太忙了，和期末容易冲突",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 5,
+          "时间合理性": 4,
+          "收获感": 4
+        },
+        "overall": 4.3
+      }
+    ],
+    "contacts": [
+      {
+        "name": "许甜",
+        "grade": "大二",
+        "tag": "社长·Coser",
+        "avatar": "XT",
+        "wechat": "anime_xutian"
+      },
+      {
+        "name": "王凡",
+        "grade": "大二",
+        "tag": "漫展策划组长",
+        "avatar": "WF2",
+        "wechat": "anime_wangfan"
+      },
+      {
+        "name": "刘萌",
+        "grade": "大三",
+        "tag": "副社长·漫画创作",
+        "avatar": "LMe",
+        "wechat": "anime_liumeng"
+      }
+    ],
+    "qa": [
+      {
+        "question": "不会画画也不会Cos，就是喜欢看番可以加入吗？",
+        "asker": "匿名新生",
+        "answer": "当然可以！我们社员里看番党占大多数，不是所有人都Cos。来一起看番聊天就很开心了。",
+        "answerer": "许甜",
+        "answererTag": "社长",
+        "time": "2025-09-15",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "food-club",
+    "name": "味蕾美食社",
+    "category": "兴趣",
+    "slogan": "吃货的快乐你想象不到",
+    "description": "一群热爱美食的同学聚在一起，每周动手做菜、探店打卡、研究各地美食文化。活动轻松有趣，没有门槛。每月一次主题美食日（如火锅趴、烘焙日、异国料理日），学期末有美食节摆摊活动。",
+    "coreActivities": [
+      {
+        "name": "每周烹饪实践",
+        "desc": "每周日下午，在社团厨房一起做菜"
+      },
+      {
+        "name": "月度主题美食日",
+        "desc": "每月一次主题活动，如火锅趴、烘焙日"
+      },
+      {
+        "name": "学期末美食节",
+        "desc": "全校美食节摆摊，展示社团拿手菜"
+      }
+    ],
+    "fee": 60,
+    "feeUsage": "食材采购、厨房使用费",
+    "requireBasis": false,
+    "basisDesc": "会吃就行，不会做也没关系",
+    "weeklyHours": 2,
+    "timeLevel": "轻度",
+    "atmosphere": [
+      "欢乐",
+      "轻松",
+      "社交"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 45,
+    "lastTermActivities": 20,
+    "retentionRate": 0.7,
+    "rating": 4.4,
+    "customQuestions": [
+      {
+        "type": "short-answer",
+        "question": "你有什么拿手菜吗？没有也没关系！"
+      }
+    ],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "2-3小时",
+        "threeWords": [
+          "好吃",
+          "欢乐",
+          "生活感"
+        ],
+        "bestActivity": "月度火锅趴，十几个人一起涮火锅太幸福了",
+        "gain": "学会了做好几道菜，室友都羡慕我",
+        "regret": "食材费用有时候超预算",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 5,
+          "时间合理性": 5,
+          "收获感": 4
+        },
+        "overall": 4.8
+      },
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "1-2小时",
+        "threeWords": [
+          "治愈",
+          "温馨",
+          "好吃"
+        ],
+        "bestActivity": "学期末美食节，我们摊位排队最长",
+        "gain": "做饭技能从零到能请朋友吃饭",
+        "regret": "社团厨房设备有限，有时候不太够用",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 5,
+          "时间合理性": 5,
+          "收获感": 4
+        },
+        "overall": 4.5
+      }
+    ],
+    "contacts": [
+      {
+        "name": "郑甜",
+        "grade": "大二",
+        "tag": "社长·烘焙达人",
+        "avatar": "ZT",
+        "wechat": "food_zhengtian"
+      },
+      {
+        "name": "李厨",
+        "grade": "大二",
+        "tag": "副社长·中餐方向",
+        "avatar": "LC",
+        "wechat": "food_lichu"
+      },
+      {
+        "name": "陈甜",
+        "grade": "大二",
+        "tag": "活动组长·探店达人",
+        "avatar": "CT",
+        "wechat": "food_chentian"
+      }
+    ],
+    "qa": [
+      {
+        "question": "厨房在哪儿？设备齐全吗？",
+        "asker": "匿名新生",
+        "answer": "在学生活动中心B1层，有灶台、烤箱、基础厨具。做中餐西餐烘焙都没问题。每次活动食材我们统一采购。",
+        "answerer": "郑甜",
+        "answererTag": "社长",
+        "time": "2025-09-16",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "environmental",
+    "name": "绿行环保社",
+    "category": "公益",
+    "slogan": "从校园开始改变世界",
+    "description": "关注校园和城市环境保护的行动型社团。定期组织校园垃圾分类宣传、旧物改造工作坊、环保骑行等活动。与市环保局和多家NGO有合作，参与真实的环保项目。适合关心环境议题、想做点实事的同学。",
+    "coreActivities": [
+      {
+        "name": "校园环保行动",
+        "desc": "每月组织一次校园清洁/分类宣传"
+      },
+      {
+        "name": "旧物改造工作坊",
+        "desc": "每两周一次，把废旧物品变成有用的东西"
+      },
+      {
+        "name": "环保骑行",
+        "desc": "每学期一次城市环保骑行活动"
+      }
+    ],
+    "fee": 15,
+    "feeUsage": "环保材料、活动物资",
+    "requireBasis": false,
+    "basisDesc": "关心环境就行",
+    "weeklyHours": 2,
+    "timeLevel": "轻度",
+    "atmosphere": [
+      "理想主义",
+      "务实",
+      "环保"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 32,
+    "lastTermActivities": 14,
+    "retentionRate": 0.58,
+    "rating": 4.0,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大二",
+        "weeklyHoursActual": "2小时",
+        "threeWords": [
+          "有意义",
+          "接地气",
+          "行动派"
+        ],
+        "bestActivity": "旧物改造工作坊，用旧T恤做了一个环保袋，超有成就感",
+        "gain": "改变了自己的生活习惯，现在自带杯子筷子已经成习惯了",
+        "regret": "社团影响力还是有限，有时候觉得力量太小",
+        "scores": {
+          "活动质量": 4,
+          "氛围友好度": 4,
+          "时间合理性": 5,
+          "收获感": 4
+        },
+        "overall": 4.3
+      }
+    ],
+    "contacts": [
+      {
+        "name": "陈绿",
+        "grade": "大二",
+        "tag": "社长·环保行动者",
+        "avatar": "CL",
+        "wechat": "green_chenlv"
+      },
+      {
+        "name": "周林",
+        "grade": "大二",
+        "tag": "副社长·NGO对接人",
+        "avatar": "ZLin",
+        "wechat": "green_zhoulin"
+      }
+    ],
+    "qa": [
+      {
+        "question": "活动都在校园内吗？",
+        "asker": "匿名新生",
+        "answer": "大部分在校内，但环保骑行和与NGO合作的项目会在校外。校外活动都会提前通知并统一组织出行。",
+        "answerer": "陈绿",
+        "answererTag": "社长",
+        "time": "2025-09-13",
+        "inKnowledgeBase": true
+      }
+    ]
+  },
+  {
+    "id": "calligraphy",
+    "name": "墨韵书法社",
+    "category": "文艺",
+    "slogan": "一笔一画，静心养性",
+    "description": "传统书法爱好者的家园，涵盖硬笔和软笔两个方向。每周有专业老师指导的练习课，从基础笔画到作品创作。社团氛围安静平和，适合想慢下来、培养专注力的同学。学期末举办书法作品展。",
+    "coreActivities": [
+      {
+        "name": "每周书法练习",
+        "desc": "周四晚，老师指导+自由练习"
+      },
+      {
+        "name": "书法作品展",
+        "desc": "学期末展出社员作品"
+      },
+      {
+        "name": "春联书写活动",
+        "desc": "每年寒假前为全校师生书写春联"
+      }
+    ],
+    "fee": 40,
+    "feeUsage": "纸墨笔砚等书法耗材",
+    "requireBasis": false,
+    "basisDesc": "零基础欢迎，从握笔开始教",
+    "weeklyHours": 2,
+    "timeLevel": "轻度",
+    "atmosphere": [
+      "安静",
+      "传统",
+      "修身"
+    ],
+    "joinMode": "直接加入",
+    "memberCount": 22,
+    "lastTermActivities": 14,
+    "retentionRate": 0.75,
+    "rating": 4.5,
+    "customQuestions": [],
+    "reviews": [
+      {
+        "grade": "大三",
+        "weeklyHoursActual": "2小时",
+        "threeWords": [
+          "安静",
+          "治愈",
+          "有沉淀"
+        ],
+        "bestActivity": "春联书写活动，帮同学写春联的时候感觉自己特别酷",
+        "gain": "字写好看了很多，也学会了静下心来",
+        "regret": "社团人少，存在感不太高",
+        "scores": {
+          "活动质量": 5,
+          "氛围友好度": 5,
+          "时间合理性": 5,
+          "收获感": 4
+        },
+        "overall": 4.8
+      }
+    ],
+    "contacts": [
+      {
+        "name": "孙墨",
+        "grade": "大三",
+        "tag": "社长·书法十年",
+        "avatar": "SM",
+        "wechat": "calligraphy_sunmo"
+      },
+      {
+        "name": "李砚",
+        "grade": "大二",
+        "tag": "硬笔组组长",
+        "avatar": "LYan",
+        "wechat": "calligraphy_liyan"
+      },
+      {
+        "name": "赵楷",
+        "grade": "大二",
+        "tag": "活动策划·书法三年",
+        "avatar": "ZKai",
+        "wechat": "calligraphy_zhaokai"
+      }
+    ],
+    "qa": [
+      {
+        "question": "需要自己准备笔墨纸砚吗？",
+        "asker": "匿名新生",
+        "answer": "不需要！社费里包含了基础耗材，社团提供练习用的笔墨纸。如果以后想买自己的也可以，我们会推荐性价比高的。",
+        "answerer": "孙墨",
+        "answererTag": "社长",
+        "time": "2025-09-14",
+        "inKnowledgeBase": true
+      }
+    ]
+  }
+]
